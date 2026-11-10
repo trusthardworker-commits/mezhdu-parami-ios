@@ -1,0 +1,4 @@
+// Cloud builds are unsigned; the Windows sideloading tool signs both targets.
+// For optional local Xcode installation, set your unique bundle ID and team.
+APP_BUNDLE_IDENTIFIER = ru.fiteu.schedule
+DEVELOPMENT_TEAM =

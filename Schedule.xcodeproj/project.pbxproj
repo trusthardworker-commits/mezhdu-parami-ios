@@ -1,0 +1,386 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 56;
+	objects = {
+		839432431200C4117D67FD62 = {
+			isa = "PBXFileReference";
+			lastKnownFileType = "sourcecode.swift";
+			path = "Shared/ScheduleCore.swift";
+			sourceTree = "<group>";
+		};
+		6DCB03D425ED4CCE73B240F6 = {
+			isa = "PBXFileReference";
+			lastKnownFileType = "sourcecode.swift";
+			path = "ScheduleApp/ScheduleApp.swift";
+			sourceTree = "<group>";
+		};
+		9A4D1CFB3A3FCE011877C856 = {
+			isa = "PBXFileReference";
+			lastKnownFileType = "sourcecode.swift";
+			path = "ScheduleWidget/ScheduleWidget.swift";
+			sourceTree = "<group>";
+		};
+		E43B0BD2BD9FD0E3BF5ACDE2 = {
+			isa = "PBXFileReference";
+			lastKnownFileType = "text.json";
+			path = "ScheduleApp/Resources/schedule.json";
+			sourceTree = "<group>";
+		};
+		A62C020C5BB7539FDA225A07 = {
+			isa = "PBXFileReference";
+			lastKnownFileType = "image.pdf";
+			path = "ScheduleApp/Resources/timetable.pdf";
+			sourceTree = "<group>";
+		};
+		37DF510AACC0C3BA0A902FE7 = {
+			isa = "PBXFileReference";
+			lastKnownFileType = "image.pdf";
+			path = "ScheduleApp/Resources/academic-weeks.pdf";
+			sourceTree = "<group>";
+		};
+		2AB044249F90A01A55159149 = {
+			isa = "PBXFileReference";
+			lastKnownFileType = "folder.assetcatalog";
+			path = "ScheduleApp/Assets.xcassets";
+			sourceTree = "<group>";
+		};
+		5352B4305EF9188341296B46 = {
+			isa = "PBXFileReference";
+			lastKnownFileType = "text.xcconfig";
+			path = "Configuration/Shared.xcconfig";
+			sourceTree = "<group>";
+		};
+		18957ACDF1334BF4DECBA102 = {
+			isa = "PBXFileReference";
+			lastKnownFileType = "text.xml";
+			path = "Shared/PrivacyInfo.xcprivacy";
+			sourceTree = "<group>";
+		};
+		DB2E414CFFABB2C075EA2186 = {
+			isa = "PBXFileReference";
+			lastKnownFileType = "text.plist.xml";
+			path = "ScheduleApp/Info.plist";
+			sourceTree = "<group>";
+		};
+		80DE1A9E14AB6487DC2B66E5 = {
+			isa = "PBXFileReference";
+			lastKnownFileType = "text.plist.xml";
+			path = "ScheduleWidget/Info.plist";
+			sourceTree = "<group>";
+		};
+		0E9C3914396DE575309A50FF = {
+			isa = "PBXFileReference";
+			lastKnownFileType = "text.plist.entitlements";
+			path = "Configuration/App.entitlements";
+			sourceTree = "<group>";
+		};
+		B3BAA28EB2D696BB96257419 = {
+			isa = "PBXFileReference";
+			lastKnownFileType = "text.plist.entitlements";
+			path = "Configuration/Widget.entitlements";
+			sourceTree = "<group>";
+		};
+		4E783A9E10D2A8ABA38CD11C = {
+			isa = "PBXFileReference";
+			explicitFileType = "wrapper.application";
+			path = "ScheduleApp.app";
+			sourceTree = "BUILT_PRODUCTS_DIR";
+		};
+		D1FC3980C62A8D20F6C0FFF0 = {
+			isa = "PBXFileReference";
+			explicitFileType = "wrapper.app-extension";
+			path = "ScheduleWidget.appex";
+			sourceTree = "BUILT_PRODUCTS_DIR";
+		};
+		FBDC4F23F93125BBEEAE800C = {
+			isa = "PBXGroup";
+			children = (4E783A9E10D2A8ABA38CD11C, D1FC3980C62A8D20F6C0FFF0,);
+			name = "Products";
+			sourceTree = "<group>";
+		};
+		B28B7AF69320201D1CF206EB = {
+			isa = "PBXGroup";
+			children = (839432431200C4117D67FD62, 6DCB03D425ED4CCE73B240F6, 9A4D1CFB3A3FCE011877C856, E43B0BD2BD9FD0E3BF5ACDE2, A62C020C5BB7539FDA225A07, 37DF510AACC0C3BA0A902FE7, 2AB044249F90A01A55159149, 5352B4305EF9188341296B46, 18957ACDF1334BF4DECBA102, DB2E414CFFABB2C075EA2186, 80DE1A9E14AB6487DC2B66E5, 0E9C3914396DE575309A50FF, B3BAA28EB2D696BB96257419, FBDC4F23F93125BBEEAE800C,);
+			sourceTree = "<group>";
+		};
+		89E1FD6268CC0F221A2BE178 = {
+			isa = "XCBuildConfiguration";
+			buildSettings = {
+				CLANG_ENABLE_MODULES = "YES";
+				SWIFT_VERSION = "5.0";
+				IPHONEOS_DEPLOYMENT_TARGET = "17.0";
+				SDKROOT = "iphoneos";
+				TARGETED_DEVICE_FAMILY = "1";
+				CODE_SIGN_STYLE = "Automatic";
+				CURRENT_PROJECT_VERSION = "1";
+				MARKETING_VERSION = "1.0";
+				ENABLE_USER_SCRIPT_SANDBOXING = "YES";
+				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator";
+				SUPPORTS_MACCATALYST = "NO";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				DEBUG_INFORMATION_FORMAT = "dwarf";
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) DEBUG";
+				ENABLE_TESTABILITY = "YES";
+			};
+			name = "Debug";
+		};
+		E6DE6C99132752C914FEF632 = {
+			isa = "XCBuildConfiguration";
+			buildSettings = {
+				CLANG_ENABLE_MODULES = "YES";
+				SWIFT_VERSION = "5.0";
+				IPHONEOS_DEPLOYMENT_TARGET = "17.0";
+				SDKROOT = "iphoneos";
+				TARGETED_DEVICE_FAMILY = "1";
+				CODE_SIGN_STYLE = "Automatic";
+				CURRENT_PROJECT_VERSION = "1";
+				MARKETING_VERSION = "1.0";
+				ENABLE_USER_SCRIPT_SANDBOXING = "YES";
+				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator";
+				SUPPORTS_MACCATALYST = "NO";
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+			};
+			name = "Release";
+		};
+		5810B6B376A3FEBC7E94DC88 = {
+			isa = "XCConfigurationList";
+			buildConfigurations = (89E1FD6268CC0F221A2BE178, E6DE6C99132752C914FEF632,);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = "Release";
+		};
+		E9B2E96ABC5F6856F2BE79CF = {
+			isa = "XCBuildConfiguration";
+			buildSettings = {
+				GENERATE_INFOPLIST_FILE = "NO";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				LD_RUNPATH_SEARCH_PATHS = ("$(inherited)", "@executable_path/Frameworks",);
+				PRODUCT_BUNDLE_IDENTIFIER = "$(APP_BUNDLE_IDENTIFIER)";
+				INFOPLIST_FILE = "ScheduleApp/Info.plist";
+				CODE_SIGN_ENTITLEMENTS = "Configuration/App.entitlements";
+				ASSETCATALOG_COMPILER_APPICON_NAME = "AppIcon";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				DEBUG_INFORMATION_FORMAT = "dwarf";
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) DEBUG";
+				ENABLE_TESTABILITY = "YES";
+			};
+			name = "Debug";
+			baseConfigurationReference = 5352B4305EF9188341296B46;
+		};
+		5A8C91857F674E16E2724F47 = {
+			isa = "XCBuildConfiguration";
+			buildSettings = {
+				GENERATE_INFOPLIST_FILE = "NO";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				LD_RUNPATH_SEARCH_PATHS = ("$(inherited)", "@executable_path/Frameworks",);
+				PRODUCT_BUNDLE_IDENTIFIER = "$(APP_BUNDLE_IDENTIFIER)";
+				INFOPLIST_FILE = "ScheduleApp/Info.plist";
+				CODE_SIGN_ENTITLEMENTS = "Configuration/App.entitlements";
+				ASSETCATALOG_COMPILER_APPICON_NAME = "AppIcon";
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+			};
+			name = "Release";
+			baseConfigurationReference = 5352B4305EF9188341296B46;
+		};
+		388C1FCB1C8BF19EBF062851 = {
+			isa = "XCConfigurationList";
+			buildConfigurations = (E9B2E96ABC5F6856F2BE79CF, 5A8C91857F674E16E2724F47,);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = "Release";
+		};
+		8EEBAB68363C2B0DAE00DB30 = {
+			isa = "XCBuildConfiguration";
+			buildSettings = {
+				GENERATE_INFOPLIST_FILE = "NO";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				LD_RUNPATH_SEARCH_PATHS = ("$(inherited)", "@executable_path/Frameworks", "@executable_path/../../Frameworks",);
+				PRODUCT_BUNDLE_IDENTIFIER = "$(APP_BUNDLE_IDENTIFIER).widget";
+				INFOPLIST_FILE = "ScheduleWidget/Info.plist";
+				CODE_SIGN_ENTITLEMENTS = "Configuration/Widget.entitlements";
+				APPLICATION_EXTENSION_API_ONLY = "YES";
+				SKIP_INSTALL = "YES";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				DEBUG_INFORMATION_FORMAT = "dwarf";
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) DEBUG";
+				ENABLE_TESTABILITY = "YES";
+			};
+			name = "Debug";
+			baseConfigurationReference = 5352B4305EF9188341296B46;
+		};
+		9B3B545F8CBA1ACB550689D3 = {
+			isa = "XCBuildConfiguration";
+			buildSettings = {
+				GENERATE_INFOPLIST_FILE = "NO";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				LD_RUNPATH_SEARCH_PATHS = ("$(inherited)", "@executable_path/Frameworks", "@executable_path/../../Frameworks",);
+				PRODUCT_BUNDLE_IDENTIFIER = "$(APP_BUNDLE_IDENTIFIER).widget";
+				INFOPLIST_FILE = "ScheduleWidget/Info.plist";
+				CODE_SIGN_ENTITLEMENTS = "Configuration/Widget.entitlements";
+				APPLICATION_EXTENSION_API_ONLY = "YES";
+				SKIP_INSTALL = "YES";
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+			};
+			name = "Release";
+			baseConfigurationReference = 5352B4305EF9188341296B46;
+		};
+		9DBEA749E673FBECCFFD77BF = {
+			isa = "XCConfigurationList";
+			buildConfigurations = (8EEBAB68363C2B0DAE00DB30, 9B3B545F8CBA1ACB550689D3,);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = "Release";
+		};
+		F5A429194A00232ACC3298B6 = {
+			isa = "PBXContainerItemProxy";
+			containerPortal = 98F54143AB4E86B28C3AFEE0;
+			proxyType = 1;
+			remoteGlobalIDString = FAD79F600E79F84B420BD567;
+			remoteInfo = "ScheduleWidget";
+		};
+		DE58E2B17C19600779694943 = {
+			isa = "PBXTargetDependency";
+			target = FAD79F600E79F84B420BD567;
+			targetProxy = F5A429194A00232ACC3298B6;
+		};
+		96F26C35A56CF1719F5FAE0C = {
+			isa = "PBXBuildFile";
+			fileRef = D1FC3980C62A8D20F6C0FFF0;
+			settings = {
+				ATTRIBUTES = ("RemoveHeadersOnCopy",);
+			};
+		};
+		BB27AD7BBFDDAC09C73BE453 = {
+			isa = "PBXCopyFilesBuildPhase";
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 13;
+			files = (96F26C35A56CF1719F5FAE0C,);
+			name = "Embed App Extensions";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		E39C01908ADC34663683FD3F = {
+			isa = "PBXBuildFile";
+			fileRef = 839432431200C4117D67FD62;
+		};
+		2C79CD3EF99E1EB2A7B0AB09 = {
+			isa = "PBXBuildFile";
+			fileRef = 6DCB03D425ED4CCE73B240F6;
+		};
+		2F0F75655B2BEC44CB947FF9 = {
+			isa = "PBXSourcesBuildPhase";
+			buildActionMask = 2147483647;
+			files = (E39C01908ADC34663683FD3F, 2C79CD3EF99E1EB2A7B0AB09,);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		65429F4F66AD679AF95AACB8 = {
+			isa = "PBXFrameworksBuildPhase";
+			buildActionMask = 2147483647;
+			files = ();
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		852F49D00232A93D0F48A805 = {
+			isa = "PBXBuildFile";
+			fileRef = E43B0BD2BD9FD0E3BF5ACDE2;
+		};
+		0F3606A472FA0F6B0F80E532 = {
+			isa = "PBXBuildFile";
+			fileRef = A62C020C5BB7539FDA225A07;
+		};
+		4109AF96D4BD02C3DE9AA1AC = {
+			isa = "PBXBuildFile";
+			fileRef = 37DF510AACC0C3BA0A902FE7;
+		};
+		8309C1327A0CAEC46CAF6319 = {
+			isa = "PBXBuildFile";
+			fileRef = 2AB044249F90A01A55159149;
+		};
+		7C587CF1D5C795398F5DB15F = {
+			isa = "PBXBuildFile";
+			fileRef = 18957ACDF1334BF4DECBA102;
+		};
+		B91F664C7A41C094C56BE6BD = {
+			isa = "PBXResourcesBuildPhase";
+			buildActionMask = 2147483647;
+			files = (852F49D00232A93D0F48A805, 0F3606A472FA0F6B0F80E532, 4109AF96D4BD02C3DE9AA1AC, 8309C1327A0CAEC46CAF6319, 7C587CF1D5C795398F5DB15F,);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		F75109BEB4DD8800DA6B45F8 = {
+			isa = "PBXNativeTarget";
+			buildConfigurationList = 388C1FCB1C8BF19EBF062851;
+			buildPhases = (2F0F75655B2BEC44CB947FF9, 65429F4F66AD679AF95AACB8, B91F664C7A41C094C56BE6BD, BB27AD7BBFDDAC09C73BE453,);
+			buildRules = ();
+			dependencies = (DE58E2B17C19600779694943,);
+			name = "ScheduleApp";
+			productName = "ScheduleApp";
+			productReference = 4E783A9E10D2A8ABA38CD11C;
+			productType = "com.apple.product-type.application";
+		};
+		32A9507361792BDE561369DF = {
+			isa = "PBXBuildFile";
+			fileRef = 839432431200C4117D67FD62;
+		};
+		76FE13528C2E48FA6A8A1885 = {
+			isa = "PBXBuildFile";
+			fileRef = 9A4D1CFB3A3FCE011877C856;
+		};
+		0AD3E5C2A98AC881927D5E19 = {
+			isa = "PBXSourcesBuildPhase";
+			buildActionMask = 2147483647;
+			files = (32A9507361792BDE561369DF, 76FE13528C2E48FA6A8A1885,);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		3B5FC9EC8945150F29AE9080 = {
+			isa = "PBXFrameworksBuildPhase";
+			buildActionMask = 2147483647;
+			files = ();
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		19D54BB251E2A971BCE5749A = {
+			isa = "PBXBuildFile";
+			fileRef = E43B0BD2BD9FD0E3BF5ACDE2;
+		};
+		587D5F88C8259AD908A1C5A5 = {
+			isa = "PBXBuildFile";
+			fileRef = 18957ACDF1334BF4DECBA102;
+		};
+		4CB52F886F501622EDA827A5 = {
+			isa = "PBXResourcesBuildPhase";
+			buildActionMask = 2147483647;
+			files = (19D54BB251E2A971BCE5749A, 587D5F88C8259AD908A1C5A5,);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		FAD79F600E79F84B420BD567 = {
+			isa = "PBXNativeTarget";
+			buildConfigurationList = 9DBEA749E673FBECCFFD77BF;
+			buildPhases = (0AD3E5C2A98AC881927D5E19, 3B5FC9EC8945150F29AE9080, 4CB52F886F501622EDA827A5,);
+			buildRules = ();
+			dependencies = ();
+			name = "ScheduleWidget";
+			productName = "ScheduleWidget";
+			productReference = D1FC3980C62A8D20F6C0FFF0;
+			productType = "com.apple.product-type.app-extension";
+		};
+		98F54143AB4E86B28C3AFEE0 = {
+			isa = "PBXProject";
+			attributes = {
+				BuildIndependentTargetsInParallel = "YES";
+				LastUpgradeCheck = "1600";
+			};
+			buildConfigurationList = 5810B6B376A3FEBC7E94DC88;
+			compatibilityVersion = "Xcode 14.0";
+			developmentRegion = "ru";
+			hasScannedForEncodings = 0;
+			knownRegions = ("ru", "en", "Base",);
+			mainGroup = B28B7AF69320201D1CF206EB;
+			productRefGroup = FBDC4F23F93125BBEEAE800C;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (F75109BEB4DD8800DA6B45F8, FAD79F600E79F84B420BD567,);
+		};
+	};
+	rootObject = 98F54143AB4E86B28C3AFEE0;
+}

@@ -1,0 +1,47 @@
+name: Build iPhone app
+
+on:
+  workflow_dispatch:
+
+permissions:
+  contents: read
+
+jobs:
+  build:
+    runs-on: macos-15
+    timeout-minutes: 25
+    steps:
+      - uses: actions/checkout@v4
+      - name: Check schedule and project files
+        run: |
+          python3 tools/validate_data.py
+          python3 tools/check_project.py
+      - name: Test Swift scheduling engine
+        run: swift test
+      - name: Build app and widget for iPhone without signing
+        run: |
+          set -euo pipefail
+          xcodebuild -project Schedule.xcodeproj -scheme ScheduleApp \
+            -configuration Release -sdk iphoneos \
+            -destination 'generic/platform=iOS' \
+            -derivedDataPath DerivedData \
+            CODE_SIGNING_ALLOWED=NO CODE_SIGNING_REQUIRED=NO build
+      - name: Package unsigned IPA
+        run: |
+          set -euo pipefail
+          mkdir -p output/Payload
+          ditto DerivedData/Build/Products/Release-iphoneos/ScheduleApp.app output/Payload/ScheduleApp.app
+          test -d output/Payload/ScheduleApp.app/PlugIns/ScheduleWidget.appex
+          cd output
+          /usr/bin/zip -qr FITeU-unsigned.ipa Payload
+      - name: Save unsigned build
+        uses: actions/upload-artifact@v4
+        with:
+          name: FITeU-unsigned-iPhone
+          path: output/FITeU-unsigned.ipa
+          if-no-files-found: error
+          retention-days: 14
+      - name: Explain installation status
+        run: |
+          echo '### Build only — installation still needs signing' >> "$GITHUB_STEP_SUMMARY"
+          echo 'The artifact contains the app and WidgetKit extension. It is unsigned and cannot be installed by opening the file on an iPhone. Signing, App Group compatibility and device testing remain separate steps.' >> "$GITHUB_STEP_SUMMARY"
