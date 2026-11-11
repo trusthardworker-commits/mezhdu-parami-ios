@@ -1,0 +1,32 @@
+<!doctype html>
+<html lang="ru"><head>
+<meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover">
+<meta name="theme-color" content="#173c36"><meta name="apple-mobile-web-app-capable" content="yes">
+<link rel="apple-touch-icon" href="icon.png"><link rel="icon" href="icon.png">
+<title>Между парами · ФИТЭУ</title>
+<link rel="stylesheet" href="style.css">
+<script defer src="core.js"></script><script defer src="app.js"></script>
+</head><body>
+<header><div class="bar"><a class="brand" href="./"><img src="icon.png" alt="">Между парами</a><span>ФИТЭУ</span></div></header>
+<main>
+<section class="top"><div><p class="eyebrow">УЧЕБНЫЙ ГОД 2026 / 27</p><h1>Расписание</h1></div><label class="picker">Моя группа<select id="group" disabled aria-label="Моя группа"></select></label></section>
+<p id="status" role="status">Загружаем расписание…</p>
+<div id="content" hidden>
+<div class="layout">
+<section class="board" aria-label="Расписание по дням">
+<div class="boardhead"><div class="metarow"><span id="week"></span><span id="relative"></span></div><h2 id="date"></h2></div>
+<div class="weeknav"><button id="prev" aria-label="Предыдущая неделя">‹</button><div id="days"></div><button id="next" aria-label="Следующая неделя">›</button></div>
+<div class="lessons" id="lessons" aria-live="polite"></div>
+<div class="base"><span>После 20:00 — пары на завтра</span><button id="reset" hidden>К актуальному дню</button></div>
+</section>
+<aside><div class="widgetcard"><div class="mini" aria-hidden="true"><i></i><b></b><b></b></div><h2>Виджет на iPhone</h2><p>Пары твоей группы прямо на экране «Домой».</p><button id="setup">Добавить виджет <span>↗</span></button></div>
+<p id="warning" class="warning" hidden></p></aside>
+</div></div></main>
+<dialog id="instructions"><button class="close" aria-label="Закрыть">×</button><h2>Виджет для <span id="widgetgroup"></span></h2>
+<ol><li>Установи <a href="https://apps.apple.com/ru/app/scriptable/id1405459188" target="_blank" rel="noopener">Scriptable из App Store</a>.</li>
+<li><a id="download" download>Скачай файл виджета</a>. <span id="downloadstatus" role="status"></span>Открой его из «Загрузок» в приложении «Файлы», выбери Scriptable и нажми «Добавить» (Add to My Scripts).</li>
+<li>Удерживай свободное место на экране «Домой». В меню добавления виджетов найди <strong>Scriptable</strong>, выбери размер и добавь виджет.</li>
+<li>Удерживай виджет → «Изменить виджет». В поле <strong>Script</strong> выбери <strong id="scriptname"></strong>.</li></ol>
+<details><summary>Если файл не открывается</summary><p>Скопируй код. В Scriptable нажми «+», вставь код и задай скрипту имя, указанное выше. Затем выбери его в настройках виджета.</p><button id="copy">Скопировать код</button><textarea id="manual" aria-label="Код виджета" readonly hidden></textarea><p id="copystatus" role="status"></p></details>
+<p class="hint">После 20:00 виджет показывает следующий день. iOS может обновить его с небольшой задержкой.</p></dialog>
+</body></html>
